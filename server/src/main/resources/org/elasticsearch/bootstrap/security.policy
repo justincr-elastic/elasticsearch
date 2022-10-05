@@ -171,10 +171,4 @@ grant {
   // read access to the entire directory hierarchy.
   permission java.io.FilePermission "/proc/self/cgroup", "read";
   permission java.io.FilePermission "/sys/fs/cgroup/-", "read";
-
-  // needed for com.nimbusds.jose.shaded.gson.Gson.toJson
-  permission java.lang.RuntimePermission "accessDeclaredMembers";
-
-  // needed for com.nimbusds.oauth2.sdk.id.Identifier#value
-  permission java.lang.reflect.ReflectPermission "suppressAccessChecks";
 };
